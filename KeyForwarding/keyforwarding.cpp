@@ -17,11 +17,10 @@ input_event outputEvent;
 // Input
 char inputDevice[32] = "/dev/input/";
 pollfd inputPollfd;
-// Common
+
 bool isDebug = false;
 
-const char* get_label(const struct label* labels, int value)
-{
+const char* get_label(const struct label* labels, int value) {
 	while (labels->name && value != labels->value)
 		labels++;
 	return labels->name;

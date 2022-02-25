@@ -2,6 +2,8 @@
 .vs
 Debug
 Release
+obj
+libs
 
 # Prerequisites
 *.d
